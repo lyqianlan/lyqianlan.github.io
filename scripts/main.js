@@ -13,12 +13,12 @@ let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
+  const myName = prompt("输入你的名字喵");
   if (!myName) {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    myHeading.textContent = `请支持博丽灵梦, ${myName}`;
   }
 }
 if (!localStorage.getItem("name")) {
